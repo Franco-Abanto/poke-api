@@ -7,9 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { ListaPokemonComponent } from './components/lista-pokemon/lista-pokemon.component';
 import { EvolucionPokemonComponent } from './components/evolucion-pokemon/evolucion-pokemon.component';
-import { MatListModule } from '@angular/material/list';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { MainComponent } from './components/main/main.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { MainComponent } from './components/main/main.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
+    HttpClientModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

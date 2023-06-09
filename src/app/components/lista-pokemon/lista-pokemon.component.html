@@ -1,23 +1,18 @@
 <div class="content">
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar" style="width: 100%" />
-    <div class="container">
-      <h4><b>John Doe</b></h4>
-      <p>Architect & Engineer</p>
+  <div class="matrix">
+    <div class="card" *ngFor="let pokemon of paginatedPokemons">
+      <img src="{{ pokemon.sprites.front_default }}" style="width: 100%" />
+      <div class="container">
+        <h4>
+          <b>{{ pokemon.name }}</b>
+        </h4>
+        <p>Opciones</p>
+      </div>
     </div>
   </div>
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar" style="width: 100%" />
-    <div class="container">
-      <h4><b>John Doe</b></h4>
-      <p>Architect & Engineer</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar" style="width: 100%" />
-    <div class="container">
-      <h4><b>John Doe</b></h4>
-      <p>Architect & Engineer</p>
-    </div>
-  </div>
+  <mat-paginator
+    [length]="listaPokemons.length"
+    [pageSize]="pageSize"
+    (page)="onPageChange($event)"
+  ></mat-paginator>
 </div>
