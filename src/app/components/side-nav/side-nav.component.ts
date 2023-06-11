@@ -12,7 +12,7 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {}
 
   navItems = [
-    { name: 'Inicio', link: '/' },
+    { name: 'Inicio', link: '/inicio' },
     { name: 'Pokemons', link: '/lista-pokemon' },
   ];
 }

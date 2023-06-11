@@ -12,6 +12,10 @@ import { MainComponent } from './components/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { DetallesPokemonComponent } from './components/detalles-pokemon/detalles-pokemon.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     EvolucionPokemonComponent,
     InicioComponent,
     MainComponent,
+    DetallesPokemonComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatListModule,
     HttpClientModule,
     MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

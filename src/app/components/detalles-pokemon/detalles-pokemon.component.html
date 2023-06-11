@@ -1,0 +1,23 @@
+<div>
+  <div class="cerrar">
+    <button mat-icon-button (click)="cerrarModal()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <div class="pokedex">
+    <div class="pokemon-card">
+      <img src="{{ pokemon.sprites.front_default }}" class="pokemon-image" />
+      <div class="pokemon-details">
+        <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+        <p class="pokemon-info">HP: {{ pokemon.stats[0].base_stat }}</p>
+        <p class="pokemon-info">Experiencia: {{ pokemon.name }} Exp</p>
+        <p class="pokemon-info">Ataque: {{ pokemon.stats[1].base_stat }} K.</p>
+        <p class="pokemon-info">Defensa: {{ pokemon.stats[3].base_stat }} K.</p>
+        <p class="pokemon-info">
+          Especial: {{ pokemon.stats[2].base_stat }} K.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

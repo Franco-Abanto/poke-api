@@ -5,6 +5,7 @@ import { ListaPokemonComponent } from './components/lista-pokemon/lista-pokemon.
 import { MainComponent } from './components/main/main.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'lista-pokemon', component: ListaPokemonComponent },
 ];
