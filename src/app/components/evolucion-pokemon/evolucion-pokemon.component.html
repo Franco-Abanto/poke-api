@@ -1,3 +1,7 @@
+<div class="title">
+  <h1>LISTA DE EVOLUCIONES</h1>
+</div>
+
 <div class="content">
   <div class="matrix">
     <div class="card" *ngFor="let pokemon of listaPokemons">
@@ -6,10 +10,16 @@
         <h4>
           <b>{{ pokemon.name }}</b>
         </h4>
-        <button class="btnDetalles">Detalles</button>
+        <div class="options">
+          <button class="btnDetalles" (click)="abrirDetalles(pokemon)">
+            Detalles
+          </button>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <button class="btnSigueinte" (click)="siguienteEvolucion()">Siguente</button>
+<div class="siguiente">
+  <button class="btnDetalles" (click)="siguienteEvolucion()">Siguente</button>
 </div>
