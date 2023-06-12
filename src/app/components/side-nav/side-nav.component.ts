@@ -14,5 +14,6 @@ export class SideNavComponent implements OnInit {
   navItems = [
     { name: 'Inicio', link: '/inicio' },
     { name: 'Pokemons', link: '/lista-pokemon' },
+    { name: 'Evoluciones', link: '/evolucion-pokemon' },
   ];
 }

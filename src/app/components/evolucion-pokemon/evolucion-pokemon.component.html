@@ -1,1 +1,15 @@
-<p>evolucion-pokemon works!</p>
+<div class="content">
+  <div class="matrix">
+    <div class="card" *ngFor="let pokemon of listaPokemons">
+      <img src="{{ pokemon.imagen }}" class="img" />
+      <div class="container">
+        <h4>
+          <b>{{ pokemon.name }}</b>
+        </h4>
+        <button class="btnDetalles">Detalles</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="btnSigueinte" (click)="siguienteEvolucion()">Siguente</button>
+</div>

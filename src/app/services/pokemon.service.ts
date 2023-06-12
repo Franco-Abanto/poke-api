@@ -18,4 +18,8 @@ export class PokemonService {
   public detallesPokemon(name: String): Observable<any> {
     return this.http.get<any>(`${this.baseEndPoint}pokemon/${name}`);
   }
+
+  public evolucionPokemon(id: Number): Observable<any> {
+    return this.http.get<any>(`${this.baseEndPoint}evolution-chain/${id}`);
+  }
 }
