@@ -27,8 +27,8 @@ export class ListaPokemonComponent implements OnInit {
 
   listarPokemones() {
     this.loading = true;
-    for (let i = 1; i < 101; i++) {
-      setTimeout(() => {
+    setTimeout(() => {
+      for (let i = 1; i < 101; i++) {
         this.pokemonService.listarPokemons(i).subscribe(
           (resp) => {
             this.listaPokemons.push(resp);
@@ -40,8 +40,8 @@ export class ListaPokemonComponent implements OnInit {
             this.loading = false;
           }
         );
-      }, 1000);
-    }
+      }
+    }, 1000);
   }
 
   onPageChange(event: PageEvent) {
